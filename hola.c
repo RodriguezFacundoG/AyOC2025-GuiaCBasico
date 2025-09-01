@@ -105,25 +105,36 @@ int main () {
     //Ejercicio 7
     int a = 5, b = 3, c = 2, d = 1;
     printf("\n\n");
-    printf("Operaciones Aritméticas: \n");
+    printf("Operaciones Aritméticas: \n"); //Tengo que preservar los valores entonces los reescribo cada vez que se modifican por una operación.
     printf("a+b*c/d = %d\n", a+b*c/d);
+    a = 5, b = 3, c = 2, d = 1;
     printf("a%%b (resto) = %d\n", a%b);
+    a = 5, b = 3, c = 2, d = 1;
     printf("a+=b = %d\n", a+=b); //El printf recibe a = a+b. Luego, imprime el valor final de a que va a ser el resultado de sumar 5 y 3.
+    a = 5, b = 3, c = 2, d = 1;
     printf("a-=b = %d\n", a-=b);
+    a = 5, b = 3, c = 2, d = 1;
     printf("a*=b = %d\n", a*=b);
+    a = 5, b = 3, c = 2, d = 1;
     printf("a/=b = %d\n", a/=b);
+    a = 5, b = 3, c = 2, d = 1;
     printf("a%%=b = %d\n", a%=b);
+    a = 5, b = 3, c = 2, d = 1;
     printf("Operaciones Logicas: \n");
-    printf("a: %x \nb:%x\n", a,b);
+    printf("a:%x \nb:%x\n", a,b);
     printf("a==b = %d\n", a==b);
     printf("a!=b = %d\n", a!=b);
     printf("a&&b = %d\n", a&&b);
     printf("a||b = %d\n", a||b);
     printf("Operaciones Binarias: \n");
     printf("a|b = %x\n", a|b);
+    a = 5, b = 3, c = 2, d = 1;
     printf("a&b = %x\n", a&b);
-    printf("a<<1 = %x\n", a<<1);
-    printf("a>>1 = %x\n", a>>1);
+    a = 5, b = 3, c = 2, d = 1;
+    printf("a<<1 = %x\n", a<<1); //Shiftear a izq. es como multiplicar por dos, por eso esto da 'a' que es 10 en hexa.
+    a = 5, b = 3, c = 2, d = 1;
+    printf("a>>1 = %x\n", a>>1); 
+    a = 5, b = 3, c = 2, d = 1;
 
 
     return 0;
