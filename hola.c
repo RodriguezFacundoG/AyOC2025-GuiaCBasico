@@ -136,6 +136,19 @@ int main () {
     printf("a>>1 = %x\n", a>>1); 
     a = 5, b = 3, c = 2, d = 1;
 
+    //Ejercicio 8
+    int j=0;
+    printf("j=%d, j++=%d\n", j, j++); //j++ primero retorna el valor de j y luego incrementa
+    printf("j=%d, ++j=%d\n", j, ++j); //++j primero incrementa y luego retorna el valor de j
+
+    //Ejercicio 9:
+    /*Realizar un programa que compare si los 3 bits m´as altos de una palabra de 32 bits son
+    iguales a los 3 bits m´as bajos de otra palabra de 32 bits. Si son iguales, informarlo por
+    pantalla.*/
+    uint32_t palabra1 = 0xb0000000;
+    uint32_t palabra2 = 0x0000000b;
+
+    printf("Los primeros 3 bits de la palabra 1 son iguales a los ultimos 3 bits de la palabra 2?: %x\n", (palabra1 >> 29) == (0x00000007 & palabra2));
 
     return 0;
 
