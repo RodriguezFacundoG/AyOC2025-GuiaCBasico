@@ -1,5 +1,13 @@
 #include <stdio.h>
 #include <stdint.h>
+#define N 10        //<--------|  IMPORTANTE: Poner el nro de ejercicio que deseo ejecutar
+
+void ejercicio10 (void) {
+    //Tanto en el caso del while, como acá, no va a imprimir el 0 porque cuando imprimió el 1, ya i pasó a valer 0, y no entra más al while, o al for en este caso
+    for(int i = 10; i>0; i--){
+        printf("i = %d\n",i);
+    }
+}
 
 int main () {
     printf("Hola Orga \n");
@@ -148,8 +156,15 @@ int main () {
     uint32_t palabra1 = 0xb0000000;
     uint32_t palabra2 = 0x0000000b;
 
-    printf("Los primeros 3 bits de la palabra 1 son iguales a los ultimos 3 bits de la palabra 2?: %x\n", (palabra1 >> 29) == (0x00000007 & palabra2));
+    printf("Los primeros 3 bits de la palabra 1 son iguales a los ultimos 3 bits de la palabra 2?: %x\n\n\n", (palabra1 >> 29) == (0x00000007 & palabra2));
 
+
+    switch (N) {
+        case 10: 
+            ejercicio10();
+            break;
+        default:
+    }
     return 0;
 
 }
